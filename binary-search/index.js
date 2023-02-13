@@ -1,4 +1,4 @@
-// binary serach faqat sortlarngan arraylarga ishlaydi va ishlash vaqti juda tez
+// binary serach faqat sortlangan arraylarga ishlaydi va ishlash vaqti juda tez
 
 // function binarySearch(arr,target){
 //  let start = 0
