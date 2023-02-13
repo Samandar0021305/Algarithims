@@ -1,3 +1,5 @@
+let arr = [1,2,0,3,4,undefined]
+
 // Array.prototype.myReduce = function(old,cur){
 //  let sum = cur == undefined ? 0 :cur
  
@@ -8,4 +10,17 @@
 //  return sum
 // }
 
-// console.log([1,2,3,4].myReduce((a,b)=>b+a,0))
+// console.log(arr.myReduce((a,b)=>b+a,0))
+
+// Array.prototype.myFilter = function(val,index,n){
+//   let res = []
+//   for(let i=index == undefined ? 0 : index ; i<this.length;i++){
+//     val = this[i]
+//     if(val){
+//         res.push(val)
+//     }
+//   }
+//   return res
+// }
+
+// console.log(arr.myFilter((a,b)=>a))
