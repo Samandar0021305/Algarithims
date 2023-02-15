@@ -28,11 +28,34 @@ class LinkedList {
             this.head = node
         }
 
-        this.getSize++
+        this.size++
+    }
+
+    print(){
+        if(this.isEmpty()){
+            console.log("this is empty")
+        }else{
+            let cur = this.head
+            let initValue = ""
+            while(cur){
+                initValue += `${cur.value}`
+                cur = cur.next
+            }
+            console.log(initValue)
+        }
     }
 
 }
 
 let list = new LinkedList()
 
-console.log(list.getSize())
+// console.log(list.getSize())
+
+list.prepend(60)
+list.print()
+list.prepend(50)
+
+
+
+list.print()
+
