@@ -1,20 +1,38 @@
-// class ListNode {
-//     constructor(data){
-//         this.data = data
-//         this.next = null
-//     }
-// }
+class Node {
+    constructor(value){
+        this.value = value
+        this.next = null
+    }
+}
 
-// class LinkedList{
-//     constructor(head = null){
-//         this.head = head
-//     }
-// }
+class LinkedList {
+    constructor(){
+        this.head = null
+        this.size = 0
+    }
 
+    isEmpty(){
+        return this.size === 0
+    }
 
-// let node1 = new ListNode(2)
-// let node2 = new ListNode(5)
-// node1.next = node2
+    getSize(){
+        return this.size
+    }
+  
+    prepend(value){
+        const node = new Node(value)
+        if(this.isEmpty()){
+            this.head = node
+        }else{
+            this.next = this.head
+            this.head = node
+        }
 
-// let list = new LinkedList(node1)
-// console.log(list.head.next.data)
+        this.getSize++
+    }
+
+}
+
+let list = new LinkedList()
+
+console.log(list.getSize())
