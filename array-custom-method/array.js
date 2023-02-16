@@ -1,4 +1,4 @@
-let arr = [1,2,0,3,4,undefined]
+// let arr = [1,2,0,3,4,undefined]
 
 // Array.prototype.myReduce = function(old,cur){
 //  let sum = cur == undefined ? 0 :cur
@@ -24,3 +24,20 @@ let arr = [1,2,0,3,4,undefined]
 // }
 
 // console.log(arr.myFilter((a,b)=>a))
+
+
+
+// Array.prototype.mySort = function(){
+//     for(let i=0;i<this.length;i++){
+//         for(let j=0;j<this.length ;j++){
+//             if(this[j] > this[j+1]){
+//                 let temp = this[j]
+//                 this[j] = this[j+1]
+//                 this[j+1] = temp
+//             }
+//         }
+//     }
+//     return this
+// }
+
+// console.log([5,90,4,2,12].mySort())
