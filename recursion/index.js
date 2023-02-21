@@ -26,5 +26,3 @@ function faktarial(n){
 }
 
 // console.log(faktarial(5))
-
-
