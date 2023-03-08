@@ -27,7 +27,7 @@ class MySet{
 
      size(){
         let a = 0
-        for(let index of this.data){
+        for(let index in this.data){
             a++
         }
         return a
