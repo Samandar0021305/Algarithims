@@ -48,8 +48,12 @@ class myArray {
      this.myArr = [val,...this.myArr];
     }
 
-    
+     
+    myConcat(arr){
+      return [...this.myArr,...arr];
+    }
 
+    
 }
 
 
